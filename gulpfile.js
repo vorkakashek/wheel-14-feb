@@ -46,6 +46,7 @@ function views() {
 		.pipe(
 			pug({
 				// Your options in here.
+				pretty: true,
 			})
 		)
 		.pipe(dest('app'))

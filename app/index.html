@@ -1,1 +1,99 @@
-<!DOCTYPE html><html lang="ru-RU"><head><title>Колесо Фортуны</title><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui"><meta name="description" content="Колесо Фортуны"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="stylesheet" href="css/main.min.css" type="text/css"><script>let SpinsAmount = 2, SpinID = 000001, PrizeCode = 1, PrizeName = 'Название Приза', Promocode = 'promocode2023'</script></head><body><div class="hide" id="modal"><div class="modal_close modal_close_icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.111 455.111" style="enable-background:new 0 0 455.111 455.111;" xml:space="preserve"><circle style="fill:#E24C4B;" cx="227.556" cy="227.556" r="227.556"></circle><path style="fill:#D1403F;" d="M455.111,227.556c0,125.156-102.4,227.556-227.556,227.556c-72.533,0-136.533-32.711-177.778-85.333    c38.4,31.289,88.178,49.778,142.222,49.778c125.156,0,227.556-102.4,227.556-227.556c0-54.044-18.489-103.822-49.778-142.222    C422.4,91.022,455.111,155.022,455.111,227.556z"></path><path style="fill:#FFFFFF;" d="M331.378,331.378c-8.533,8.533-22.756,8.533-31.289,0l-72.533-72.533l-72.533,72.533    c-8.533,8.533-22.756,8.533-31.289,0c-8.533-8.533-8.533-22.756,0-31.289l72.533-72.533l-72.533-72.533    c-8.533-8.533-8.533-22.756,0-31.289c8.533-8.533,22.756-8.533,31.289,0l72.533,72.533l72.533-72.533    c8.533-8.533,22.756-8.533,31.289,0c8.533,8.533,8.533,22.756,0,31.289l-72.533,72.533l72.533,72.533    C339.911,308.622,339.911,322.844,331.378,331.378z"></path></svg></div><div class="modal_content"><div class="modal_title">Поздравляем!</div><img class="modal_image" src="./assets/images/dest/prizes/0.png" alt="" loading="lazy"><p>Вам выпал: <span class="modal_prize"> </span></p><p class="modal_contet_desc modal_message"> </p><button class="main_btn modal_close"> </button></div></div><div class="modal_close hide" id="modal_overlay"></div><main><a href="#">@naira_arina </a><h1> <span>Беспроигрышное</span><br><span>Колесо <span>фортуны</span></span></h1><div class="wheel_section"><div id="wheel"><div class="wheel_center"><div class="center"></div><svg class="arrow" width="18" height="37" viewbox="0 0 26 37" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_108_122)"><path d="M12.1007 0.707055L1.05468 35.5918C0.836869 36.2796 1.29688 37 1.95396 37H24.046C24.7031 37 25.1631 36.2796 24.9453 35.5918L13.8993 0.70705C13.6008 -0.235686 12.3992 -0.235682 12.1007 0.707055Z" fill="white"></path></g><defs><clippath id="clip0_108_122"><rect width="26" height="37" fill="white" transform="translate(26 37) rotate(-180)"></rect></clippath></defs></svg></div><div class="wheel_inner"><div class="wheel_line"></div><div class="wheel_line"></div><div class="wheel_line"></div><div class="wheel_line"></div><div class="wheel_line"></div><div class="wheel_prize_group"><div class="wheel_prize"> <div class="wheel_prize_content"> <strong>Скидка 50% </strong><br>на гайд</div></div><div class="wheel_prize"><div class="wheel_prize_content"> <strong>KitchenAid</strong><img src="./assets/images/dest/KitchenAid.png" alt="" loading="lazy"></div></div><div class="wheel_prize"> <div class="wheel_prize_content"> <strong>Чек-лист</strong><br>по Фуд-фото   </div></div><div class="wheel_prize"> <div class="wheel_prize_content"> Деньги<br><strong>30 000 ₽</strong></div></div><div class="wheel_prize"> <div class="wheel_prize_content"> <strong>Скидка 25%</strong><br>на гайд</div></div><div class="wheel_prize"> <div class="wheel_prize_content"> <strong>Чек-лист</strong><br>по SMM</div></div><div class="wheel_prize"> <div class="wheel_prize_content"> <strong>Приз дня</strong></div></div><div class="wheel_prize"> <div class="wheel_prize_content"> Деньги<br><strong>5 000 ₽</strong></div></div><div class="wheel_prize"> <div class="wheel_prize_content"> <strong>VIP тариф</strong><br>Caketeam</div></div><div class="wheel_prize"> <div class="wheel_prize_content"> Деньги<br><strong>15 000 ₽</strong></div></div></div></div></div><div id="wheel_bg"><img src="./assets/images/dest/wheel_bg.png" alt="" loading="lazy"></div></div><button class="main_btn" id="start">Крутить колесо</button><div id="counter"><div class="counter_inner"><span class="counter_content">Осталось попыток: </span><span class="counter_value"> </span></div></div></main><script src="js/app.min.js"> </script></body></html>
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>Колесо Фортуны</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui">
+    <meta name="description" content="Колесо Фортуны">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+    <script>let SpinsAmount = 2, SpinID = 000001, PrizeCode = 1, PrizeName = 'Название Приза', Promocode = 'promocode2023'</script>
+  </head>
+  <body>
+    <div class="hide" id="modal">
+      <div class="modal_close modal_close_icon">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.111 455.111" style="enable-background:new 0 0 455.111 455.111;" xml:space="preserve">
+          <circle style="fill:#E24C4B;" cx="227.556" cy="227.556" r="227.556"></circle>
+          <path style="fill:#D1403F;" d="M455.111,227.556c0,125.156-102.4,227.556-227.556,227.556c-72.533,0-136.533-32.711-177.778-85.333    c38.4,31.289,88.178,49.778,142.222,49.778c125.156,0,227.556-102.4,227.556-227.556c0-54.044-18.489-103.822-49.778-142.222    C422.4,91.022,455.111,155.022,455.111,227.556z"></path>
+          <path style="fill:#FFFFFF;" d="M331.378,331.378c-8.533,8.533-22.756,8.533-31.289,0l-72.533-72.533l-72.533,72.533    c-8.533,8.533-22.756,8.533-31.289,0c-8.533-8.533-8.533-22.756,0-31.289l72.533-72.533l-72.533-72.533    c-8.533-8.533-8.533-22.756,0-31.289c8.533-8.533,22.756-8.533,31.289,0l72.533,72.533l72.533-72.533    c8.533-8.533,22.756-8.533,31.289,0c8.533,8.533,8.533,22.756,0,31.289l-72.533,72.533l72.533,72.533    C339.911,308.622,339.911,322.844,331.378,331.378z"></path>
+        </svg>
+      </div>
+      <div class="modal_content">
+        <div class="modal_title">Поздравляем!</div><img class="modal_image" src="./assets/images/dest/prizes/0.png" alt="" loading="lazy">
+        <p>Вам выпал: <span class="modal_prize"> </span></p>
+        <p class="modal_contet_desc modal_message"> </p>
+        <button class="main_btn modal_close"> </button>
+      </div>
+    </div>
+    <div class="modal_close hide" id="modal_overlay"></div>
+    <main><a href="#">@naira_arina </a>
+      <h1> <span>Беспроигрышное</span><br><span>Колесо <span>фортуны</span></span></h1>
+      <div class="wheel_section">
+        <div id="wheel">
+          <div class="wheel_center">
+            <div class="center"></div>
+            <svg class="arrow" width="18" height="37" viewbox="0 0 26 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_108_122)">
+                <path d="M12.1007 0.707055L1.05468 35.5918C0.836869 36.2796 1.29688 37 1.95396 37H24.046C24.7031 37 25.1631 36.2796 24.9453 35.5918L13.8993 0.70705C13.6008 -0.235686 12.3992 -0.235682 12.1007 0.707055Z" fill="white"></path>
+              </g>
+              <defs>
+                <clippath id="clip0_108_122">
+                  <rect width="26" height="37" fill="white" transform="translate(26 37) rotate(-180)"></rect>
+                </clippath>
+              </defs>
+            </svg>
+          </div>
+          <div class="wheel_inner">
+            <div class="wheel_line"></div>
+            <div class="wheel_line"></div>
+            <div class="wheel_line"></div>
+            <div class="wheel_line"></div>
+            <div class="wheel_line"></div>
+            <div class="wheel_prize_group">
+              <div class="wheel_prize"> 
+                <div class="wheel_prize_content"> <strong>Скидка 50% </strong><br>на гайд</div>
+              </div>
+              <div class="wheel_prize">
+                <div class="wheel_prize_content"> <strong>KitchenAid</strong><img src="./assets/images/dest/KitchenAid.png" alt="" loading="lazy"></div>
+              </div>
+              <div class="wheel_prize"> 
+                <div class="wheel_prize_content"> <strong>Чек-лист</strong><br>по Фуд-фото   </div>
+              </div>
+              <div class="wheel_prize"> 
+                <div class="wheel_prize_content">
+                   Деньги<br><strong>30 000 ₽</strong></div>
+              </div>
+              <div class="wheel_prize"> 
+                <div class="wheel_prize_content"> <strong>Скидка 25%</strong><br>на гайд</div>
+              </div>
+              <div class="wheel_prize"> 
+                <div class="wheel_prize_content"> <strong>Чек-лист</strong><br>по SMM</div>
+              </div>
+              <div class="wheel_prize"> 
+                <div class="wheel_prize_content"> <strong>Приз дня</strong></div>
+              </div>
+              <div class="wheel_prize"> 
+                <div class="wheel_prize_content">
+                   Деньги<br><strong>5 000 ₽</strong></div>
+              </div>
+              <div class="wheel_prize"> 
+                <div class="wheel_prize_content"> <strong>VIP тариф</strong><br>Caketeam</div>
+              </div>
+              <div class="wheel_prize"> 
+                <div class="wheel_prize_content">
+                   Деньги<br><strong>15 000 ₽</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="wheel_bg"><img src="./assets/images/dest/wheel_bg.png" alt="" loading="lazy"></div>
+      </div>
+      <button class="main_btn" id="start">Крутить колесо</button>
+      <div id="counter">
+        <div class="counter_inner"><span class="counter_content">Осталось попыток: </span><span class="counter_value"> </span></div>
+      </div>
+    </main>
+    <script src="js/app.min.js"> </script>
+  </body>
+</html>
