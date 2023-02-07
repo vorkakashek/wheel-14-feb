@@ -1,0 +1,100 @@
+#modal.hide
+    .modal_close.modal_close_icon
+        include ../icons/close
+    .modal_content
+        .modal_title Поздравляем!
+        img.modal_image(src="./assets/images/dest/prizes/0.png" alt="" loading="lazy")
+
+        p Вам выпал: 
+            span.modal_prize 
+        //- p.modal_contet_desc Скоро мы с вами свяжемся! :)
+        p.modal_contet_desc.modal_message 
+
+        //- .modal_promocode.clipboard
+        button.main_btn.modal_close 
+
+#modal_overlay.modal_close.hide
+
+main
+    a(href="#") @naira_arina 
+
+    h1 
+        span Беспроигрышное
+        br
+        span Колесо 
+            span фортуны
+
+    .wheel_section
+        #wheel
+            .wheel_center
+                //- img.center(src="./assets/images/dest/center.svg" alt="")
+                .center
+                //- img.arrow(src="./assets/images/dest/arrow.svg" alt="")
+                include ../icons/arrow
+            .wheel_inner
+                .wheel_line
+                .wheel_line
+                .wheel_line
+                .wheel_line
+                .wheel_line
+
+                .wheel_prize_group
+                    .wheel_prize 
+                        .wheel_prize_content 
+                            strong Скидка 50% 
+                            br
+                            | на гайд
+                    .wheel_prize
+                        .wheel_prize_content 
+                            strong KitchenAid
+                            img(src="./assets/images/dest/KitchenAid.png" alt="" loading="lazy")
+                    .wheel_prize 
+                        .wheel_prize_content 
+                            strong Чек-лист
+                            br
+                            | по Фуд-фото   
+                    .wheel_prize 
+                        .wheel_prize_content 
+                            | Деньги
+                            br
+                            strong 30 000 ₽
+                    .wheel_prize 
+                        .wheel_prize_content 
+                            strong Скидка 25%
+                            br
+                            | на гайд
+                    .wheel_prize 
+                        .wheel_prize_content 
+                            strong Чек-лист
+                            br
+                            | по SMM
+                    .wheel_prize 
+                        .wheel_prize_content 
+                            strong Приз дня
+                    .wheel_prize 
+                        .wheel_prize_content 
+                            | Деньги
+                            br
+                            strong 5 000 ₽
+                    .wheel_prize 
+                        .wheel_prize_content 
+                            strong VIP тариф
+                            br
+                            | Caketeam
+                    .wheel_prize 
+                        .wheel_prize_content 
+                            | Деньги
+                            br
+                            strong 15 000 ₽
+
+                    
+
+        #wheel_bg
+            img(src="./assets/images/dest/wheel_bg.png" alt="" loading="lazy")
+
+    button#start.main_btn Крутить колесо
+
+    #counter
+        .counter_inner
+            span.counter_content Осталось попыток: 
+            span.counter_value 

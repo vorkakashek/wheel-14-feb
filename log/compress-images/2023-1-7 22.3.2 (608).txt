@@ -1,0 +1,8 @@
+File from: [app/assets/images/src/prizes/0 — копия.png]
+
+File to: [app/assets/images/dest/prizes/0 — копия.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: D:\GitHub\wheel-14-feb\node_modules\pngquant-bin\vendor\pngquant.exe --quality=20-50 -o app/assets/images/dest/prizes/0 — копия.png app/assets/images/src/prizes/0 — копия.png
+  error: cannot open app\assets\images\src\prizes\0 — копия.png for reading

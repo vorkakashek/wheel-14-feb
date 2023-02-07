@@ -1,0 +1,14 @@
+doctype html
+html(lang="ru-RU")
+    head
+        include head
+        include css
+        include variables
+    body
+        block content
+            div Привет! Здесь будет основной контент шаблона
+
+            block footer
+                div Это футер
+
+        include js
