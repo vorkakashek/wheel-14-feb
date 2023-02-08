@@ -161,8 +161,10 @@ let modal_show = () => {
         modal.querySelector('.main_btn').innerHTML = 'Спасибо'
     }
 
-    if (Discount === 'true') {
+    if (Type === '1') {
         modal.querySelector('.modal_message').innerHTML = `Вы можете воспользоваться скидкой при покупке <a href="https://guides.naira-arina.ru" target="_blank">новых гайдов</a>`
+    } else if (Type === '2') {
+        modal.querySelector('.modal_message').innerHTML = 'Чек-лист добавлен в Ваш личный кабинет'
     } else {
         modal.querySelector('.modal_message').innerHTML = 'Скоро мы с вами свяжемся! :)'
     }
