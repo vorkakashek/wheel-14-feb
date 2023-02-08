@@ -131,7 +131,7 @@ let running = () => {
 let finish = () => {
     console.log('finish')
     modal_show()
-    
+
     // btn_enable()
 }
 
@@ -151,7 +151,7 @@ let modal_show = () => {
 
     modal.classList.remove('hide')
     overlay.classList.remove('hide')
-    
+
     modal.querySelector('.modal_prize').innerHTML = PrizeName // подставляем название приза
     modal.querySelector('.modal_image').src = `./assets/images/dest/prizes/${PrizeCode}.png` // подставляем нужную картинку приза по ID
 
@@ -161,15 +161,11 @@ let modal_show = () => {
         modal.querySelector('.main_btn').innerHTML = 'Спасибо'
     }
 
-    // if (Promocode.length > 0) {
-    //     modal.querySelector('.modal_promocode').classList.remove('hide')
-    //     modal.querySelector('.modal_message').innerHTML = `Воспользуйся этим промокодом на скидку на сайте <a href="https://naira-arina.ru" target="_blank">naira-arina.ru</a>`
-
-    //     modal.querySelector('.modal_promocode').innerHTML = Promocode
-    // } else {
-    //     modal.querySelector('.modal_message').innerHTML = 'Скоро мы с вами свяжемся! :)'
-    //     modal.querySelector('.modal_promocode').classList.add('hide')
-    // }
+    if (Discount === 'true') {
+        modal.querySelector('.modal_message').innerHTML = `Вы можете воспользоваться скидкой при покупке <a href="https://guides.naira-arina.ru" target="_blank">новых гайдов</a>`
+    } else {
+        modal.querySelector('.modal_message').innerHTML = 'Скоро мы с вами свяжемся! :)'
+    }
 }
 
 let modal_hide = () => {
